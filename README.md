@@ -6,8 +6,13 @@ Dès qu'une données arrive sur le réseau, une classe appelée ReseauListener d
 La classe ReseauListener est fournie et ne peut pas être changée. Elle s'écrit comme suit :
 
 class ReseauListener{
+
   public String donneeArrive(String s){
+  
     return Calendar.getInstance().getDate() + " " + s;
+    
+    }
+    
 }
 
 Cependant, on souhaite supprimer la date en début de la chaîne reçue.
